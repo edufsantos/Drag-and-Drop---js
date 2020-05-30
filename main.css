@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(252, 252, 252);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.app{
+  display: flex;
+  flex-flow: column;
+
+  height: 100vh;
+  width: 100vw;
+
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  height: 60px;
+}
+
+.dropzone{
+  position: relative;
+  height: 100vh;
+  width: 70%;
+  margin: 0 auto;
+}
+.card{
+  box-sizing: border-box;
+  height: 100px;
+  width: 100%;
+  cursor: move;
+  background-color: #fff;
+  border: 1px solid #eee ;
+  display:  flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.item{
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+}
+.item i{
+  padding: 20px;
+}
+.item img{
+  height: 50px;
+  width: 50px;
+  border-radius:  5px;
+  margin: 0 20px;
+}
+
+.item h1{
+  font-size: 20px;
+}
+.item p {
+  font-size: 15px;
+}
+
+.prices{
+  display: flex;
+  max-width: 100px;
+}
+
+.prices input{
+  max-width: 50px;
+}
+.pause-active{
+  border-radius: 6px;
+  display: flex;
+}
+.status {
+  display: flex;
+}
+.pause-active button.red{
+  color: #fff;
+  background-color: crimson;
+
+}
+.pause-active button:nth-child(1){
+  border-radius: 5px 0 0 5px;
+  
+}
+.pause-active button{
+  box-sizing: border-box;
+  padding: 7px;
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  border-radius: 0px 5px 5px 0;
+
+}
+.status i{
+  padding: 0 20px;
+}
+card, .dropzone {
+  transition: 400ms;
+}
+
+.is-dragging {
+  cursor: move;
+  opacity: 0.3;
+}
+
+.over {
+  background-color: #4cd13711;
+}
